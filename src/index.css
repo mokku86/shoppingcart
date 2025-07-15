@@ -200,6 +200,9 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -407,6 +410,11 @@
       @media (hover: hover) {
         background-color: var(--color-red-900);
       }
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
 }

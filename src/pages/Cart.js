@@ -1,7 +1,8 @@
 import { CartItem } from "../components";
-import { useFetch } from "../hooks";
+import { useFetch, useTitle } from "../hooks";
 
 export const Cart = () => {
+  useTitle('Your Cart');
   const { data:carts } = useFetch('carts');
 
   return (

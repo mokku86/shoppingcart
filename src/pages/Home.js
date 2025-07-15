@@ -1,7 +1,8 @@
 import { Card } from "../components";
-import { useFetch } from "../hooks";
+import { useFetch, useTitle } from "../hooks";
 
 export const Home = () => {
+  useTitle('Your Cart');
   const { data:products } = useFetch('products');
 
   return (
