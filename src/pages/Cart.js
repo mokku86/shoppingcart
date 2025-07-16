@@ -3,7 +3,20 @@ import { useFetch, useTitle } from "../hooks";
 
 export const Cart = () => {
   useTitle('Your Cart');
-  const { data:carts } = useFetch('carts');
+  const carts = [
+        {
+            "id" : 10001,
+            "name" : "Sonic Gear - bla-007 wireless headphone",
+            "price" : 149,
+            "img" : "images/item-01.jpg"
+        },
+        {
+            "id" : 10002,
+            "name" : "Beats - bs-1000 wireless headphone",
+            "price" : 139,
+            "img" : "images/item-02.jpg"
+        }
+    ]  
 
   return (
     <main>
