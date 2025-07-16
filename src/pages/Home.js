@@ -1,5 +1,5 @@
 import { Card } from "../components";
-import { useFetch, useTitle } from "../hooks";
+import { useTitle } from "../hooks";
 
 export const Home = () => {
   useTitle('Home');
